@@ -8,7 +8,13 @@ import { PackageIcon, TrolleyIcon } from '@sanity/icons'
 const Header = () => {
     const { user } = useUser();
     const createClerkPasskey = async () => {
-        await user?.createPasskey();
+        try{
+            const response = await user?.createPasskey();
+            console.log(response);
+        }
+        catch(err){
+            console.log("Error",JSON.stringify(err,null,2))
+        }
     }
 
     return (
