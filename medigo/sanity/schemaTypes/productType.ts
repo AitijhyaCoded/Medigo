@@ -34,7 +34,7 @@ export const productType = defineType({
         defineField({
             name: 'description',
             title: 'Description',
-            type: 'blockContext',
+            type: 'blockContent',
             validation: Rule => Rule.required()
         }),
         defineField({
