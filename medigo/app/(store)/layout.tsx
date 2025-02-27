@@ -3,6 +3,7 @@ import "../globals.css";
 import {ClerkProvider} from '@clerk/nextjs'
 import Header from "@/components/Header";
 import { SanityLive } from "@/sanity/lib/live";
+import SearchPage from "./search/page";
 
 export const metadata: Metadata = {
   title: "Medigo",
@@ -21,8 +22,8 @@ export default function RootLayout({
           <main>
             <Header/>
             {children}
+            <SearchPage searchParams={{query: "query"}}/>
           </main>
-
           <SanityLive />
         </body>
       </html>
