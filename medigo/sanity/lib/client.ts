@@ -10,6 +10,6 @@ export const client = createClient({
   stega: {
     studioUrl: process.env.NEXT_PUBLIC_STUDIO_URL
     ? `https://${process.env.NEXT_PUBLIC_STUDIO_URL}/studio`
-    : '${process.env.NEXT_PUBLIC_VERCEL_URL}/studio',
-  }
-})
+    : `${process.env.NEXT_PUBLIC_VERCEL_URL}/studio`,
+  },
+});
