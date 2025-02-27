@@ -9,7 +9,7 @@ function ProductThumb({ product }: {product: Product }) {
     return (
         <Link
             href={`/product/${product.slug?.current}`}
-            className={`group flex flex-col bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden ${
+            className={`group flex flex-col bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden p-12 ${
                 isOutOfStock ? "opacity-50" : ""
             }`}
         >
