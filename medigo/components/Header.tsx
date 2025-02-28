@@ -3,7 +3,7 @@ import { ClerkLoaded, SignInButton, UserButton, useUser } from '@clerk/nextjs'
 import Link from 'next/link'
 import Form from 'next/form'
 import React from 'react'
-import { PackageIcon, TrolleyIcon } from '@sanity/icons'
+import { DocumentsIcon, PackageIcon, TrolleyIcon } from '@sanity/icons'
 
 const Header = () => {
     const { user } = useUser();
@@ -50,6 +50,12 @@ const Header = () => {
                                 <span className='hidden md:inline'>My Orders</span>
                             </Link>
                         )}
+
+                        {/* Pres Ana */}
+                        <Link href="/basket" className='relative flex items-center justify-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
+                        <DocumentsIcon className='w-6 h-6'/>
+                        <span className='hidden md:inline'>Upload Prescription</span>
+                    </Link>
 
                         {/* User Profile */}
                         {user ? (
