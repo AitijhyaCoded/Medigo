@@ -1,2 +1,2 @@
 # Medigo
-Invoccon Lesgo!
+Innovocon Lesgo!
